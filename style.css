@@ -1,0 +1,9 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+source,
+img {
+	max-height: 600px;
+}

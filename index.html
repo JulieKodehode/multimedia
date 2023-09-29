@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>multimediaExample</title>
+	</head>
+
+	<body>
+		<!-- Picture hvor bildet skalerer med størrelsen på enheten -->
+		<picture>
+			<source media="(min-width: 650px)" srcset="assets/img_multimediaExample.jpg" />
+			<source media="(min-width: 465px)" srcset="assets/img_multimediaExampleTiny.jpg" />
+			<img
+				style="max-width:100%"
+				src="assets/img_multimediaExampleTiny.jpg"
+				alt="A person in the desert" />
+		</picture>
+
+		<!-- Picture hvor bildet skifter med størrelser på enheten -->
+		<picture>
+			<source media="(min-width: 650px)" srcset="assets/img_food.jpg" />
+			<source media="(min-width: 465px)" srcset="assets/img_car.jpg" />
+			<img src="assets/img_girl.jpg" style="width:auto;" />
+		</picture>
+		<br />
+
+		<!-- Video med fil lagret på pc -->
+		<video controls>
+			<source src="assets/Download.mp4" type="video/mp4" sizes="600px" />
+		</video>
+		<br />
+
+		<!-- Audio med fil lagret på pc -->
+		<audio controls auto>
+			<source src="assets/skyrimMusikk.mp3" type="audio/mp3" />
+		</audio>
+		<br />
+
+		<!-- iframe tatt fra youtube -->
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/nJGCVFn57U8?si=_Ez9bfBEpejtRjdJ"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen></iframe>
+		<br />
+
+		<!-- iframe skrevet selv -->
+		<iframe
+			width="600"
+			height="400"
+			frameborder="0"
+			src="https://www.youtube.com/embed/1s58rW0_LN4?si=V9-J0wpCBywg0caj"
+			title="Youtube video player"></iframe>
+	</body>
+</html>
